@@ -1,0 +1,29 @@
+#SYSTEM = GRAphen
+ALGO = Normal      #algorithm for electron optimization
+PREC = Normal
+ISTART = 0        #without WAVECAR file
+ICHARG = 2        #the initial charge density
+ISPIN = 1         #non spin polarized
+#ENCUT = 400       #7:cutoff energy and should be largest EnMAX in the POTCAR file
+ISIF = 3            #length and angle are important
+IBRION = 1
+SYMPREC = 1E-08    #1:first I add it to solve symytryyyyyy problem
+ISYM = 0           #2:second I add it to solve symytryyyyyy problem
+#EDIFF = 1E-05
+NSW = 100           #the number of iteration steps to improve the structure
+POTIM = 0.5          # accuracy of simulation at each step
+#NBANDS = 8          #number of bands and usually can be between 8 to 12
+LPLANE = .FALSE.        #new change for last RUN in 3 of Bahman
+NPAR = 4060             #3:third I add it to solve memory problem
+NIONS = 27            #4:I add it to solve memory problem
+ION_TYPE = 4          #5: I add it to solve memory problem
+1 3
+2 3
+3 3
+4 18
+LREAL = .FALSE.       #6:virtual methods for electronic computingf
+LWAVE = .FALSE.      #Lowdin orthogonalization
+ISMEAR = 0          # no using of Gaussian smearing method
+LCHARG = .FALSE.     # useing of CHGCAR file
+
+
